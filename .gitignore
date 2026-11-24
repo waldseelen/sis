@@ -1,0 +1,25 @@
+# Secrets & OAuth tokens (asla git'e ekleme!)
+.secrets/
+*client_secret*.json
+*token*.json
+.youtube_uploader_channels_cache
+.env
+
+# Python / Node / OS
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Heavy raw/rendered episode media (keep metadata & markdowns)
+channels/*/episodes/*/01-raw/*
+channels/*/episodes/*/02-cut/*
+channels/*/episodes/*/03-graphics/*
+channels/*/episodes/*/04-audio/*
+channels/*/episodes/*/05-exports/*
+!channels/*/episodes/.gitkeep
+!channels/*/.gitkeep
+workspace/
