@@ -1,6 +1,8 @@
 # sis — Çok Kanallı YouTube Üretim Stüdyosu
 
-`waldseelen/CONTENTY` çekirdek motoru (`core/` submodule) üzerine kurulu, **12 kanallı**, %100 ücretsiz/yerel odaklı YouTube üretim çalışma alanı.
+`waldseelen/CONTENTY` çekirdek motoru (`core/` submodule) üzerine kurulu, **12 kanallı**, %100 ücretsiz/yerel odaklı tam otonom YouTube üretim stüdyosu.
+
+> **İçerik üreticisiysen (teknik detaylarla uğraşmak istemiyorsan):** Doğrudan **`BASLA.md`** dosyasını aç — tüm hazır istek örnekleri orada. Ajan tüm teknik işleri arka planda kendisi halleder.
 
 ---
 

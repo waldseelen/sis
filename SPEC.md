@@ -52,7 +52,9 @@ python3 scripts/meditation_loop.py \
 
 ---
 
-## 4. Kurulum ve Senkronizasyon Sözleşmesi (`scripts/setup.*`, `scripts/sync_core.*`)
+## 4. Kurulum, Senkronizasyon ve Çoklu Kanal Durum Sözleşmesi
 
-- `setup.sh` / `setup.ps1` **idempotent**tir; model veya ağır pip paketi otomatik indirmez (yalnızca ajan bağlantılarını ve dizin kontrollerini yapar; istenirse kurulum komutlarını yazdırır).
+- `setup.sh` / `setup.ps1` **idempotent**tir; model veya ağır pip paketi otomatik indirmez (yalnızca ajan bağlantılarını ve dizin kontrollerini yapar).
 - `sync_core.sh` / `sync_core.ps1`, `core/` alt modülünü `origin/main` ucuna çeker (`git submodule update --remote --merge core`).
+- `python3 scripts/studio_status.py [--json]`: 12 kanalın `CHANNEL.md` meta verilerini ve bölüm sayılarını okuyarak ajanın operatöre sade Türkçe durum özeti sunmasını sağlar.
+- **Operatör Deneyimi Sözleşmesi:** Ajan geliştirici dili kullanmaz; tüm teknik adımları, dosya/klasör açmayı ve yerel kurulumları arka planda otonom yürütür (`CLAUDE.md` §1 ve `.agents/rules/sis-producer.md`).

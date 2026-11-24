@@ -1,13 +1,17 @@
 # ARCHITECTURE.md — `sis` Sistem Mimarisi
 
-## 1. Genel Bakış
+## 1. Genel Bakış ve Üç Depo Sınırı
 
-`sis`, 12 kanallık çoklu YouTube üretim deposudur. Çekirdek video kurgu, ses temizliği, thumbnail ve YouTube yükleme motoru doğrudan `waldseelen/CONTENTY` reposundan `core/` Git alt modülü (submodule) olarak gelir; kanal kuralları, büyüme oyun kitapları ve meditasyon döngü aracı ise `sis` içinde yaşar.
+- **Tek Teknik Sahip (Buğra):** `waldseelen/CONTENTY` (saf ortak çekirdek motor), `waldseelen/SACMA` (Buğra'nın kişisel kanal deposu) ve `waldseelen/sis` (bu depo — ablanın 12 kanallık üretim stüdyosu) birbirinden izole yaşar.
+- `sis`, ortak çekirdek video kurgu, ses temizliği, thumbnail ve YouTube yükleme motorunu `waldseelen/CONTENTY` reposundan `core/` Git alt modülü (submodule) olarak tüketir; ablanın teknik bilgi gerektirmeyen tam otonom yapım asistanı kuralları, oyun kitapları ve 12 kanal profili ise yalnızca `sis` içinde yaşar.
 
 ```text
 sis/
 ├── AGENT.md / AGENTS.md        # CLAUDE.md işaretçileri (OpenCode / Antigravity)
-├── CLAUDE.md                   # Bağlayıcı stüdyo ve kanal kuralları
+├── CLAUDE.md                   # Bağlayıcı yapımcı asistanı + güvenlik + kanal kuralları
+├── BASLA.md                    # Sıfır teknik terimli içerik üreticisi başlangıç kartı
+├── .agents/rules/
+│   └── sis-producer.md         # Antigravity otomatik yapımcı-modu kuralı
 ├── ARCHITECTURE.md / SPEC.md / MEMORY.md / PROGRESS.md / README.md
 ├── core/                       # git submodule -> waldseelen/CONTENTY (ortak motor)
 │   ├── skills/                 # studio-router, youtube-growth, faceless-and-shorts, ...
@@ -18,9 +22,10 @@ sis/
 │   ├── growth-and-packaging.md
 │   ├── competitor-remake.md
 │   └── tts-and-music-stack.md
-├── scripts/                    # sis'e özel kurulum, sync ve meditasyon döngü araçları
+├── scripts/                    # sis'e özel kurulum, sync, durum ve meditasyon döngü araçları
 │   ├── setup.sh / setup.ps1
 │   ├── sync_core.sh / sync_core.ps1
+│   ├── studio_status.py
 │   └── meditation_loop.py
 ├── channels/                   # 12 kanal profili ve izole bölüm klasörleri
 │   ├── 01-ehliyet-pass-test/
