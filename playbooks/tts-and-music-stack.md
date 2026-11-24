@@ -7,8 +7,8 @@ Bu doküman **Windows 11 ince kasa NPU'lu ASUS Vivobook** hedef donanımına gö
 
 ## 1. Seslendirme (TTS) — Robotik Olmayan Ücretsiz İnsan Sesi
 
-> [!WARNING] ElevenLabs Ücretsiz Plan Uyarısı
-> ElevenLabs'in ücretsiz planı ticari YouTube monetizasyon hakkı vermez. Gelir hedeflenen tüm kanallarda aşağıdaki açık kaynak/ücretsiz yığın kullanılır. *(Yalnızca özel testte ElevenLabs erkek sesi denenirse `.wav` formatı ve `~0.85` hız referans alınır.)*
+> [!CAUTION] Yasaklı Ücretli / Freemium Araçlar (ElevenLabs Kullanılamaz)
+> Yalnızca LLM/AI ajan sağlayıcısı dışında hiçbir araca bütçe ayrılmaz ve **ElevenLabs kullanılamaz** (ücretsiz planı ticari YouTube monetizasyon hakkı vermez, ücretli abonelik de bütçe dışıdır). Tüm kanallarda yalnızca aşağıdaki %100 ücretsiz açık kaynak yığın kullanılır.
 
 ### Katman 1 — CPU / ONNX (İnce Kasa Laptopta Kesin Çalışır — Varsayılan)
 1. **Kokoro-82M (`kokoro-onnx` — Apache-2.0):**
@@ -27,8 +27,8 @@ Bu doküman **Windows 11 ince kasa NPU'lu ASUS Vivobook** hedef donanımına gö
 
 ## 2. Müzik ve Ambiyans AI — Sözsüz Stoic & Meditasyon
 
-> [!WARNING] Suno & Udio Ücretsiz Plan Tuzağı
-> Suno ve Udio'nun ücretsiz sürümlerinde üretilen müziklerin ticari hakları platforma aittir; monetize kanallarda Content ID/telif riski doğurur.
+> [!CAUTION] Suno & Udio Kullanılamaz
+> Yalnızca LLM/AI ajan sağlayıcısı dışında ücretli abonelik açılmaz; **Suno ve Udio (ücretli veya ücretsiz) kullanılamaz** (ücretsiz planlarda ticari hak platforma aittir ve YouTube Content ID/telif riski doğurur).
 
 ### Katman 1 — Sıfır Telif + Düşük Donanım Yükü (Varsayılan)
 1. **YouTube Audio Library + Pixabay / Freesound `CC0` Stem'leri:**

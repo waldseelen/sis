@@ -9,6 +9,6 @@
 - **Hedef Loudness:** `-16 LUFS` / `-14 LUFS`, `<= -1.0 dBTP`
 
 ## Kanal Özel Kuralları
-1. **Sıfır Content ID Riski:** Suno/Udio ücretsiz planları kesinlikle kullanılmaz; yalnızca telifsiz/açık kaynak üretim kullanılır ve parça kaynakları `sources.json` dosyasında tutulur.
+1. **Sıfır Content ID Riski:** Suno ve Udio (ücretsiz veya ücretli) kesinlikle kullanılamaz; yalnızca telifsiz/açık kaynak üretim kullanılır ve parça kaynakları `sources.json` dosyasında tutulur.
 2. **Döngü / Playlist Geçişi:** Parçalar arası sert kesim yerine `acrossfade` ile yumuşak geçiş verilir.
 3. **Oynatma Listeleri:** Tür ve ruh haline göre ayrı oynatma listeleri (odaklanma, uyku, çalışma, gece sürüşü) kurulur.

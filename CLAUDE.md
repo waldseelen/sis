@@ -58,7 +58,7 @@ Herhangi bir üretim, analiz veya kod değişikliği öncesi sırayla oku:
 
 ## §3. Teknik Üretim ve Kalite Kapıları
 
-1. **Yüzsüz & Lokal Üretim Önceliği:** Varsayılan yığın %100 ücretsiz/yerel araçlardır (`playbooks/tts-and-music-stack.md`). Suno/Udio/ElevenLabs ücretsiz planları ticari telif riski nedeniyle üretimde kullanılmaz.
+1. **Sıfır Ücretli Medya Aracı Kuralı:** Yalnızca kodlama/ajan AI sağlayıcısı (LLM API/abonelik) dışında hiçbir araca ödeme yapılmaz. **ElevenLabs, Suno ve Udio (ücretli veya ücretsiz plan dahil) kesinlikle kullanılamaz**; tüm ses, müzik ve görsel üretimi %100 ücretsiz/yerel yığınla (`playbooks/tts-and-music-stack.md`) yapılır.
 2. **Sözlü Videolar (`spoken-essay`):**
    - Senaryo kancası `python3 core/scripts/yt_hookscore.py` ile puanlanır.
    - Kesim sırası `core/AGENTS.md` kuralına uyar: önce tekrar/flub (`ffmpeg select`), sonra sessizlik; altyazı en sonda işlenir.
